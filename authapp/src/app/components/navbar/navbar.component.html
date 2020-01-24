@@ -16,7 +16,9 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Navbar text with an inline element
+        
+        <button type="button" class="btn btn-outline-primary" *ngIf="!auth.loggedIn" (click)="auth.login()">Log In</button>
+        <button type="button" class="btn btn-outline-danger" *ngIf="auth.loggedIn" (click)="auth.logout()">Log Out</button>
       </span>
     </div>
   </nav>
