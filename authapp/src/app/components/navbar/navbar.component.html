@@ -12,7 +12,7 @@
           <a class="nav-link" routerLink="/prices" routerLinkActive="active">Prices</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/protected" routerLinkActive="active">Protected</a>
+          <a class="nav-link" routerLink="/protected" routerLinkActive="active" *ngIf="auth.loggedIn">Protected</a>
         </li>
       </ul>
       <span class="navbar-text">
